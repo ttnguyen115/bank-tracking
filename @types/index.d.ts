@@ -144,13 +144,6 @@ declare interface BankInfoProps {
     type: "full" | "card";
 }
 
-declare interface HeaderBoxProps {
-    type?: "title" | "greeting";
-    title: string;
-    subtext: string;
-    user?: string;
-}
-
 declare interface MobileNavProps {
     user: User;
 }
@@ -198,12 +191,6 @@ declare interface BankTabItemProps {
     appwriteItemId?: string;
 }
 
-declare interface TotalBalanceBoxProps {
-    accounts: Account[];
-    totalBanks: number;
-    totalCurrentBalance: number;
-}
-
 declare interface FooterProps {
     user: User;
     type?: "mobile" | "desktop";
@@ -215,9 +202,7 @@ declare interface RightSidebarProps {
     banks: Bank[] & Account[];
 }
 
-declare interface SiderbarProps {
-    user: User;
-}
+
 
 declare interface RecentTransactionsProps {
     accounts: Account[];
@@ -241,10 +226,6 @@ declare interface TransactionTableProps {
 
 declare interface CategoryProps {
     category: CategoryCount;
-}
-
-declare interface DoughnutChartProps {
-    accounts: Account[];
 }
 
 declare interface PaymentTransferFormProps {
